@@ -23,6 +23,8 @@ CONTACT_EMAIL=you@yourdomain.tld
 ```
 
 - Add your desired domains/subdomains to [config/domains.txt](./config/domains.txt)
+  - For each line in `config/domains.txt`, this script will create one SAN certificate and one SSL Client profile on your F5
+
 ```
 mydomain.com server1.mydomain.com
 example.com www.example.com server1.example.com

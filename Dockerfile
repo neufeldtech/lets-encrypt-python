@@ -1,5 +1,4 @@
 FROM ubuntu:latest
-MAINTAINER docker@ekito.fr
 
 RUN apt-get update && apt-get -y install cron python python-pip git curl openssl
 

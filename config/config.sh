@@ -43,7 +43,7 @@ CHALLENGETYPE="dns-01"
 #
 # BASEDIR and WELLKNOWN variables are exported and can be used in an external program
 # default: <unset>
-HOOK=$(pwd)/le_hook.py
+HOOK=/opt/le/le_hook.py
 
 
 # Base directory for account key, generated certificates and list of domains (default: $SCRIPTDIR -- uses config directory if undefined)

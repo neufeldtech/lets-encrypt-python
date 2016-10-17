@@ -22,9 +22,15 @@ CONTACT_EMAIL=you@yourdomain.tld
 ...
 ```
 
+- Configure staging or production Certificate Authority in [config/config.sh](./config/config.sh) (use staging until you have tested and verified that everything is working)
+```
+# Path to certificate authority (default: https://acme-v01.api.letsencrypt.org/directory)
+#CA="https://acme-v01.api.letsencrypt.org/directory"
+CA="https://acme-staging.api.letsencrypt.org/directory"
+``` 
+
 - Add your desired domains/subdomains to [config/domains.txt](./config/domains.txt)
   - For each line in `config/domains.txt`, this script will create one SAN certificate and one SSL Client profile on your F5
-
 ```
 mydomain.com server1.mydomain.com
 example.com www.example.com server1.example.com

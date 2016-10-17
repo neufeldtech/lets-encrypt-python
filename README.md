@@ -36,7 +36,7 @@ mydomain.com server1.mydomain.com
 example.com www.example.com server1.example.com
 ```
 
-- Set up your variables in `confi/config.json`
+- Set up your variables in `config/config.json`
 ```
 {
   "f5_host":"172.16.0.10",

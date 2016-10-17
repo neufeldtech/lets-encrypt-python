@@ -36,13 +36,15 @@ mydomain.com server1.mydomain.com
 example.com www.example.com server1.example.com
 ```
 
-- Set up your variables in your `.envdocker` file
+- Set up your variables in `confi/config.json`
 ```
-LE_UDNS_USERNAME="udnsadmin"
-LE_UDNS_PASSWORD="udnsadmin"
-LE_F5_HOSTNAME="172.16.0.10"
-LE_F5_USERNAME="f5user"
-LE_F5_PASSWORD="f5password"
+{
+  "f5_host":"172.16.0.10",
+  "f5_user": "admin",
+  "f5_password": "admin",
+  "udns_username": "udnsadmin",
+  "udns_password": "udnsadmin"
+}
 ```
 
 - Build the container 
@@ -54,13 +56,13 @@ docker build -t le .
 - Run the container in ad-hoc mode (Script will execute immediately with no recurring no cron job)
 ```
 cd lets-encrypt-python
-docker run -it -v $(pwd):/opt/le --env-file .envdocker le /opt/le/letsencrypt.sh --cron -f /opt/le/config/config.sh 
+docker run -it -v $(pwd):/opt/le le /opt/le/letsencrypt.sh --cron -f /opt/le/config/config.sh 
 ```
 
 - Run the container in cron mode (Script will run once at 5AM daily)
 ```
 cd lets-encrypt-python
-docker run -d -v $(pwd):/opt/le --env-file .envdocker le
+docker run -d -v $(pwd):/opt/le le
 ```
 
 ## Contributors

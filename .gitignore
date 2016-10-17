@@ -3,5 +3,5 @@
 config/accounts
 config/certs
 config/domains.txt
-config/config.sh
+config/config.json
 venv

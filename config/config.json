@@ -1,0 +1,7 @@
+{
+  "f5_host":"172.16.0.10",
+  "f5_user": "admin",
+  "f5_password": "admin",
+  "udns_username": "udnsadmin",
+  "udns_password": "udnsadmin"
+}

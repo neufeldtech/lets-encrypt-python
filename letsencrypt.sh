@@ -1,4 +1,5 @@
-h by lukas2511
+#!/bin/bash
+#letsencrypt.sh by lukas2511
 # Source: https://github.com/lukas2511/letsencrypt.sh
 #
 # This script is licensed under The MIT License (see LICENSE for more information).

@@ -1,0 +1,6 @@
+config/accounts
+config/certs
+config/domains.txt
+config/config.json
+venv
+lock

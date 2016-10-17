@@ -1,5 +1,3 @@
-.env
-.envdocker
 config/accounts
 config/certs
 config/domains.txt

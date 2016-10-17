@@ -59,7 +59,7 @@ cd lets-encrypt-python
 docker run -it -v $(pwd):/opt/le le /opt/le/letsencrypt.sh --cron -f /opt/le/config/config.sh 
 ```
 
-- Run the container in cron mode (Script will run once at 5AM daily)
+- TODO (currently broken): Run the container in cron mode (Script will run once at 5AM daily)
 ```
 cd lets-encrypt-python
 docker run -d -v $(pwd):/opt/le le

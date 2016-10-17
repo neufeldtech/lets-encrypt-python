@@ -1,1 +1,1 @@
-0 5 * * * root /opt/le/letsencrypt.sh --cron -f /opt/le/config/config.sh >> /var/log/cron.log 2>&1
+* * * * * root bash /opt/le/cron.sh 
